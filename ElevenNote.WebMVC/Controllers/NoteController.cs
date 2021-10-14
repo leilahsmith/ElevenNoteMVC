@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElevenNote.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,8 @@ namespace ElevenNote.WebMVC.Controllers
         // GET: Note
         public ActionResult Index()
         {
-            return View();
+            var model = new NoteListItem[0];
+            return View(model);
         }
     }
 }
