@@ -20,7 +20,7 @@ namespace ElevenNote.WebMVC.Controllers
 
             return View(model);
         }
-        //Add method here VVVV
+        
         //GET: Create
         public ActionResult Create()
         {
