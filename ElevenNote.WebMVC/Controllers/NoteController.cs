@@ -91,6 +91,7 @@ namespace ElevenNote.WebMVC.Controllers
             ModelState.AddModelError("", "Your note could not be updated.");
             return View(model);
         }
+        //GET: Delete
         [ActionName("Delete")]
         public ActionResult Delete(int id)
         {
@@ -100,6 +101,7 @@ namespace ElevenNote.WebMVC.Controllers
             return View(model);
         }
 
+        //POST: Delete
         [HttpPost]
         [ActionName("Delete")]
         [ValidateAntiForgeryToken]
